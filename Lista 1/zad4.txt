@@ -1,0 +1,71 @@
+select film.film_id,film.title,category.name
+from sakila.film, sakila.film_category,sakila.category
+where description not like '%Documentary%'
+and film_category.category_id=6 
+and film.film_id=film_category.film_id 
+and film_category.category_id=category.category_id
+
+film_id	title	name
+1	ACADEMY DINOSAUR	Documentary
+3	ADAPTATION HOLES	Documentary
+40	ARMY FLINTSTONES	Documentary
+58	BEACH HEARTBREAKERS	Documentary
+62	BED HIGHBALL	Documentary
+72	BILL OTHERS	Documentary
+85	BONNIE HOLOCAUST	Documentary
+101	BROTHERHOOD BLANKET	Documentary
+129	CAUSE DATE	Documentary
+142	CHICKEN HELLFIGHTERS	Documentary
+150	CIDER DESIRE	Documentary
+156	CLERKS ANGELS	Documentary
+199	CUPBOARD SINNERS	Documentary
+206	DANCING FEVER	Documentary
+219	DEEP CRUSADE	Documentary
+221	DELIVERANCE MULHOLLAND	Documentary
+248	DOZEN LION	Documentary
+261	DUFFEL APOCALYPSE	Documentary
+295	EXPENDABLE STALLION	Documentary
+336	FRENCH HOLIDAY	Documentary
+393	HALLOWEEN NUTS	Documentary
+400	HARDLY ROBBERS	Documentary
+407	HAWK CHILL	Documentary
+412	HEAVYWEIGHTS BEAST	Documentary
+427	HOMEWARD CIDER	Documentary
+441	HUNTER ALTER	Documentary
+457	INDEPENDENCE HOTEL	Documentary
+466	INTOLERABLE INTENTIONS	Documentary
+497	KILL BROTHERHOOD	Documentary
+544	MADISON TRAP	Documentary
+552	MAJESTIC FLOATS	Documentary
+571	METAL ARMAGEDDON	Documentary
+575	MIDSUMMER GROUNDHOG	Documentary
+576	MIGHTY LUCK	Documentary
+589	MODERN DORADO	Documentary
+616	NATIONAL STORY	Documentary
+622	NEWSIES STORY	Documentary
+627	NORTH TEQUILA	Documentary
+629	NOTORIOUS REUNION	Documentary
+650	PACIFIC AMISTAD	Documentary
+687	POCUS PULP	Documentary
+698	PRINCESS GIANT	Documentary
+708	QUILLS BULL	Documentary
+712	RAIDERS ANTITRUST	Documentary
+713	RAINBOW SHOCK	Documentary
+734	ROAD ROXANNE	Documentary
+757	SAGEBRUSH CLUELESS	Documentary
+776	SECRET GROUNDHOG	Documentary
+788	SHIP WONDERLAND	Documentary
+791	SHOW LORD	Documentary
+812	SMOKING BARBARELLA	Documentary
+834	SPOILERS HELLFIGHTERS	Documentary
+855	STREAK RIDGEMONT	Documentary
+888	THIN SAGEBRUSH	Documentary
+925	UNITED PILOT	Documentary
+943	VILLAIN DESPERATE	Documentary
+945	VIRGINIAN PLUTO	Documentary
+952	WAGON JAWS	Documentary
+960	WARS PLUTO	Documentary
+966	WEDDING APOLLO	Documentary
+973	WIFE TURN	Documentary
+992	WRATH MILE	Documentary
+996	YOUNG LANGUAGE	Documentary
